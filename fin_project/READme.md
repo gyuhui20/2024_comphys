@@ -5,7 +5,9 @@
 loss function =  mse(initial conition과)  + mse(pinn이 예측한 값을 t에 대해 미분한 식과 주어진 dy(방정식) 사이의 차이)  
 
 그러려면, real value(function)을 알고 있어야함 -> 그래서 미방 풀이 진행  
-Q1 . 만약 여기에 noisy measurement까지 추가한다면? ->need to add denoise model  
+
+Q1 . 만약 여기에 noisy measurement까지 추가한다면? 0에서1사이의 랜덤값을 추가해주자.
+
 Q2 . 만약 loss fn의 importance of each term이 다르다면? 각각 hyperparam붙여서 기여도를 컨트롤해야함
 
 - PINN : physical-informed neural network  
